@@ -1332,3 +1332,250 @@ a:focus-visible {
     margin-top: auto;
 }
 
+.lesson-panel {
+  margin-top: 48px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #f6efdf;
+  color: #45382e;
+  animation: lessonAppear 0.35s ease-out;
+}
+
+.lesson-panel h2 {
+  margin: 8px 0;
+}
+
+.lesson-panel h3 {
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.lesson-close {
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  margin-bottom: 24px;
+}
+
+.chord-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.chord-item {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border: 1px solid #d9c8ad;
+  border-radius: 16px;
+  background: #fffaf0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.progression {
+  margin-top: 18px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.strumming-pattern {
+  line-height: 1.8;
+}
+
+.lesson-tip {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #e9dfc9;
+  line-height: 1.6;
+}
+
+@keyframes lessonAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .lesson-panel {
+    padding: 22px;
+  }
+
+  .chord-item {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.chord-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+
+.chord-diagram {
+    min-width: 0;
+    padding: 1.2rem;
+    border: 1px solid rgba(96, 108, 56, 0.2);
+    border-radius: 16px;
+    background: #fffdf6;
+    color: #283618;
+}
+
+.chord-diagram h4 {
+    margin: 0 0 1rem;
+    font-size: 1.6rem;
+}
+
+.shape-name {
+    margin: 0 0 0.8rem;
+    color: #606c38;
+    font-size: 0.85rem;
+}
+
+.guitar-fretboard {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1rem;
+}
+
+.fretboard-strings {
+    display: flex;
+    flex-direction: column;
+}
+
+.fretboard-string {
+    display: flex;
+    align-items: stretch;
+    height: 35px;
+}
+
+.string-label {
+    width: 18px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    font-size: 0.7rem;
+    color: #606c38;
+}
+
+.string-frets {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    flex: 1;
+    border-top: 1px solid #b8a88a;
+}
+
+.fret-cell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    border-right: 1px solid #d6c9ad;
+}
+
+.fret-cell:first-child {
+    border-left: 2px solid #a78b61;
+}
+
+.fret-cell::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: #b8a88a;
+    z-index: 0;
+}
+
+.nut-fret:first-child {
+    border-left: 4px solid #606c38;
+}
+
+.note-dot {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #606c38;
+    color: #fffdf6;
+    font-size: 0.65rem;
+    font-weight: 700;
+}
+
+.note-dot.root-note {
+    background: #bc6c25;
+}
+
+.open-note {
+    position: relative;
+    z-index: 1;
+    background: #fffdf6;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.fret-numbers {
+    display: flex;
+    margin-left: 18px;
+    padding-top: 0.3rem;
+    color: #8b806b;
+    font-size: 0.7rem;
+}
+
+.fret-numbers span {
+    flex: 1;
+    text-align: center;
+}
+
+.alternatives-button {
+    margin-top: 0.6rem;
+    padding: 0.5rem 0;
+    border: 0;
+    background: transparent;
+    color: #606c38;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.85rem;
+}
+
+.alternative-shapes {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.chord-error {
+    color: #a34330;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+    .chord-list {
+        grid-template-columns: 1fr;
+    }
+
+    .chord-diagram {
+        padding: 1rem;
+    }
+}
+
+
