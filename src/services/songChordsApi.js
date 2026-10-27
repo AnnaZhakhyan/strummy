@@ -1,5 +1,5 @@
 
-const BASE_URL = 'https://songsearch.chords.wbou.dev/api'
+const BASE_URL = 'https://strummy-chord-backend.onrender.com/api'
 
 export async function searchSongsWithChords(query) {
     const response = await fetch(
