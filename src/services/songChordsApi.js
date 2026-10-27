@@ -1,5 +1,5 @@
 
-const BASE_URL = 'https://strummy-chord-backend.onrender.com/api'
+const BASE_URL = '/chords-api'
 
 export async function searchSongsWithChords(query) {
     const response = await fetch(
@@ -7,7 +7,9 @@ export async function searchSongsWithChords(query) {
     )
 
     if (!response.ok) {
-        throw new Error('Could not search for songs with chords.')
+        throw new Error(
+            `Could not search for songs with chords. (${response.status})`
+        )
     }
 
     return response.json()
@@ -19,7 +21,9 @@ export async function getSongChords(songId) {
     )
 
     if (!response.ok) {
-        throw new Error('Could not load this song’s chords.')
+        throw new Error(
+            `Could not load this song's chords. (${response.status})`
+        )
     }
 
     return response.json()
@@ -33,7 +37,8 @@ export async function findSongChords(artist, title) {
     }
 
     const normalize = value =>
-        value.toLowerCase()
+        (value ?? '')
+            .toLowerCase()
             .replace(/\([^)]*\)/g, '')
             .replace(/\[[^\]]*\]/g, '')
             .replace(/[^a-z0-9]/g, '')
@@ -54,12 +59,13 @@ export async function findSongChords(artist, title) {
         song => normalize(song.artist) === wantedArtist
     )
 
-const match = exactMatch ?? artistMatch
+    const match = exactMatch ?? artistMatch
 
-if (!match) {
-    throw new Error(
-        `No matching chord chart found for ${artist} - ${title}. Try another song.`
-    )
-}
+    if (!match) {
+        throw new Error(
+            `No matching chord chart found for ${artist} - ${title}. Try another song.`
+        )
+    }
+
     return getSongChords(match.id)
 }

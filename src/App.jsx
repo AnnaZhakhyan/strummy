@@ -144,44 +144,79 @@ function App() {
                 </div>
 
                 <div className="hero-visual">
+
                     <div
                         className="room"
-                        role="img"
-                        aria-label="A cosy illustrated music corner with a lamp, guitar, and plant"
+                        aria-label="A cosy guitar corner at night, with a rainy window, a ceiling lamp, a plant and an armchair"
                     >
-                        <div className="sun-shape" />
+                        {/* Rainy night outside the window */}
+                        <div className="window" aria-hidden="true">
+                            <div className="window-sky" />
+                            <div className="window-moon" />
+                            <div className="window-building building-one" />
+                            <div className="window-building building-two" />
+                            <div className="window-building building-three" />
 
-                        <div className="wall-frame" aria-hidden="true">
-                            <span>take it</span>
-                            <span>slow ♡</span>
+                            <div className="rain rain-one" />
+                            <div className="rain rain-two" />
+                            <div className="rain rain-three" />
+                            <div className="rain rain-four" />
+                            <div className="rain rain-five" />
+                            <div className="rain rain-six" />
+                            <div className="rain rain-seven" />
+                            <div className="rain rain-eight" />
+
+                            <div className="window-crossbar window-crossbar-vertical" />
+                            <div className="window-crossbar window-crossbar-horizontal" />
                         </div>
 
-                        <div className="lamp" aria-hidden="true">
+                        {/* Ceiling pendant */}
+                        <div className="ceiling-lamp" aria-hidden="true">
+                            <div className="lamp-cord" />
                             <div className="lamp-glow" />
-                            <div className="lampshade" />
-                            <div className="lamp-neck" />
-                            <div className="lamp-base" />
-
-                            <button
-                                className="lamp-string"
-                                type="button"
-                                onClick={() => setLampOn((previous) => !previous)}
-                                aria-label={lampOn ? 'Turn lamp off' : 'Turn lamp on'}
-                                aria-pressed={lampOn}
-                                title="Pull the string to toggle the lamp"
-                            >
-                                <span />
-                            </button>
+                            <div className="lampshade">
+                                <div className="lamp-bulb" />
+                            </div>
                         </div>
 
+                        {/* Pull cord: the only interactive part of the room */}
+                        <button
+                            className="lamp-string"
+                            type="button"
+                            onClick={() => setLampOn((previous) => !previous)}
+                            aria-label={lampOn ? 'Turn ceiling lamp off' : 'Turn ceiling lamp on'}
+                            aria-pressed={lampOn}
+                            title="Pull to toggle the ceiling lamp"
+                        >
+                            <span className="pull-cord" />
+                            <span className="pull-knob" />
+                        </button>
+
+                        {/* Houseplant */}
                         <div className="plant" aria-hidden="true">
                             <span className="leaf leaf-one" />
                             <span className="leaf leaf-two" />
                             <span className="leaf leaf-three" />
                             <span className="leaf leaf-four" />
+                            <span className="leaf leaf-five" />
+                            <span className="leaf leaf-six" />
+                            <div className="plant-stem" />
                             <div className="plant-pot" />
                         </div>
 
+                        {/* Comfy armchair */}
+                        <div className="armchair" aria-hidden="true">
+                            <div className="chair-back" />
+                            <div className="chair-cushion" />
+                            <div className="chair-arm chair-arm-left" />
+                            <div className="chair-arm chair-arm-right" />
+                            <div className="chair-seat" />
+                            <div className="chair-leg chair-leg-left" />
+                            <div className="chair-leg chair-leg-right" />
+                            <div className="chair-pillow" />
+                        </div>
+
+                        {/* Acoustic guitar */}
                         <div className="guitar" aria-hidden="true">
                             <div className="guitar-head" />
                             <div className="guitar-neck" />
@@ -194,10 +229,11 @@ function App() {
 
                         <div className="room-floor" />
                         <p className="room-caption">
-                            slow evenings, soft strings, good songs.
+                            a rainy night & a song or two.
                         </p>
                     </div>
                 </div>
+
             </section>
 
             <section className="songs-section" id="songs">
