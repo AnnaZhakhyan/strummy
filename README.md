@@ -1,8 +1,6 @@
 # Strummy - the acoustic guitar beginner guide
 
 
-# Strummy 
-
 Strummy is a cozy, beginner-friendly guitar learning website designed to help users discover songs they love and learn how to play them on acoustic guitar. With a warm, relaxing visual style, Strummy makes practising guitar feel approachable and enjoyable.
 
 ##  Features
