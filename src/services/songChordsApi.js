@@ -1,6 +1,7 @@
 
-const BASE_URL = '/chords-api'
-
+const BASE_URL = import.meta.env.DEV
+  ? '/chords-api'
+  : 'https://strummy-chord-backend.onrender.com/api'
 export async function searchSongsWithChords(query) {
     const response = await fetch(
         `${BASE_URL}/search?q=${encodeURIComponent(query)}&limit=10`
