@@ -69,14 +69,19 @@ export function searchSongs(query) {
                     )
                 })
                 .slice(0, 12)
+
                 .map((song) => ({
                     id: song.trackId,
                     title: song.trackName,
                     artist: song.artistName,
-                    artwork: song.artworkUrl100,
+                    artwork: song.artworkUrl100?.replace(
+                        '100x100bb',
+                        '600x600bb'
+                    ),
                     preview: song.previewUrl,
                     url: song.trackViewUrl,
                 }))
+
 
             resolve(songs)
         }
