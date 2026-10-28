@@ -1,0 +1,225 @@
+
+[
+  {
+    "id": "riptide",
+    "title": "Riptide",
+    "artist": "Vance Joy",
+    "mood": ["happy", "dreamy", "romantic"],
+    "chords": ["Am", "G", "C"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A catchy acoustic song using three common open chords."
+  },
+  {
+    "id": "three-little-birds",
+    "title": "Three Little Birds",
+    "artist": "Bob Marley & The Wailers",
+    "mood": ["happy", "calm", "cozy"],
+    "chords": ["A", "D", "E"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A cheerful, relaxed song with a simple repeating chord progression."
+  },
+  {
+    "id": "knockin-on-heavens-door",
+    "title": "Knockin' on Heaven's Door",
+    "artist": "Bob Dylan",
+    "mood": ["sad", "calm", "cozy"],
+    "chords": ["G", "D", "Am", "C"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A slow, familiar song with a small set of open chords."
+  },
+  {
+    "id": "stand-by-me",
+    "title": "Stand by Me",
+    "artist": "Ben E. King",
+    "mood": ["romantic", "cozy", "calm"],
+    "chords": ["G", "Em", "C", "D"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A warm classic with a repeating progression and beginner-friendly open chords."
+  },
+  {
+    "id": "zombie",
+    "title": "Zombie",
+    "artist": "The Cranberries",
+    "mood": ["sad", "dreamy"],
+    "chords": ["Em", "C", "G", "D"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A recognizable song built around four common chords."
+  },
+  {
+    "id": "perfect",
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "mood": ["romantic", "cozy", "sad"],
+    "chords": ["G", "Em", "C", "D"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A romantic acoustic ballad with a beginner-friendly simplified arrangement."
+  },
+  {
+    "id": "wonderwall",
+    "title": "Wonderwall",
+    "artist": "Oasis",
+    "mood": ["sad", "dreamy", "romantic"],
+    "chords": ["Em7", "G", "Dsus4", "A7sus4"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A classic acoustic singalong that rewards practicing chord transitions and strumming."
+  },
+  {
+    "id": "let-it-be",
+    "title": "Let It Be",
+    "artist": "The Beatles",
+    "mood": ["calm", "cozy", "happy"],
+    "chords": ["C", "G", "Am", "F"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "A comforting classic; the common progression includes F, which may require a barre shape."
+  },
+  {
+    "id": "hallelujah",
+    "title": "Hallelujah",
+    "artist": "Leonard Cohen",
+    "mood": ["sad", "calm", "romantic"],
+    "chords": ["C", "Am", "F", "G"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "A slow, expressive song with a memorable chord progression and an F chord."
+  },
+  {
+    "id": "house-of-the-rising-sun",
+    "title": "The House of the Rising Sun",
+    "artist": "The Animals",
+    "mood": ["sad", "dreamy"],
+    "chords": ["Am", "C", "D", "F", "E"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "A moody classic that helps develop picking patterns and chord transitions."
+  },
+  {
+    "id": "im-yours",
+    "title": "I'm Yours",
+    "artist": "Jason Mraz",
+    "mood": ["happy", "romantic", "cozy"],
+    "chords": ["B", "F#", "G#m", "E"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "A laid-back acoustic pop song whose common chord shapes require more left-hand strength."
+  },
+
+  
+  {
+    "id": "fast-car",
+    "title": "Fast Car",
+    "artist": "Tracy Chapman",
+    "mood": ["sad", "dreamy", "calm"],
+    "chords": ["C", "G", "Em", "D"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A reflective acoustic classic with a repeating chord progression and steady picking."
+  },
+  {
+    "id": "yellow",
+    "title": "Yellow",
+    "artist": "Coldplay",
+    "mood": ["romantic", "dreamy", "cozy"],
+    "chords": ["G", "D", "C", "Em"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A dreamy singalong with a simplified open-chord arrangement."
+  },
+  {
+    "id": "hey-soul-sister",
+    "title": "Hey, Soul Sister",
+    "artist": "Train",
+    "mood": ["happy", "romantic", "upbeat"],
+    "chords": ["C", "G", "Am", "F"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "A cheerful acoustic pop song that helps develop rhythm and chord changes."
+  },
+  {
+    "id": "take-me-home-country-roads",
+    "title": "Take Me Home, Country Roads",
+    "artist": "John Denver",
+    "mood": ["happy", "cozy", "calm"],
+    "chords": ["G", "Em", "D", "C"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A warm campfire singalong using familiar open chords."
+  },
+  {
+    "id": "im-with-you",
+    "title": "I'm with You",
+    "artist": "Avril Lavigne",
+    "mood": ["sad", "romantic", "dreamy"],
+    "chords": ["Am", "F", "C", "G"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "An emotional pop-rock ballad with a useful repeating progression."
+  },
+  {
+    "id": "photograph",
+    "title": "Photograph",
+    "artist": "Ed Sheeran",
+    "mood": ["romantic", "sad", "cozy"],
+    "chords": ["E", "B", "C#m", "A"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "A nostalgic acoustic ballad suited to practicing expressive strumming."
+  },
+  {
+    "id": "someone-like-you",
+    "title": "Someone Like You",
+    "artist": "Adele",
+    "mood": ["sad", "romantic", "calm"],
+    "chords": ["A", "E", "F#m", "D"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "A heartfelt ballad that works well for practicing arpeggios and chord transitions."
+  },
+  {
+    "id": "ho-hey",
+    "title": "Ho Hey",
+    "artist": "The Lumineers",
+    "mood": ["happy", "cozy", "romantic"],
+    "chords": ["C", "F", "Am", "G"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "An upbeat folk singalong with a repetitive strumming pattern."
+  },
+  {
+    "id": "let-her-go",
+    "title": "Let Her Go",
+    "artist": "Passenger",
+    "mood": ["sad", "dreamy", "romantic"],
+    "chords": ["G", "D", "Em", "C"],
+    "barre_chords": false,
+    "difficulty": "beginner",
+    "reason": "A mellow acoustic song that pairs well with fingerpicking practice."
+  },
+  {
+    "id": "counting-stars",
+    "title": "Counting Stars",
+    "artist": "OneRepublic",
+    "mood": ["happy", "dreamy", "upbeat"],
+    "chords": ["Am", "C", "G", "F"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "An energetic song for building consistent rhythm and smoother chord changes."
+  },
+  {
+    "id": "cant-help-falling-in-love",
+    "title": "Can't Help Falling in Love",
+    "artist": "Elvis Presley",
+    "mood": ["romantic", "calm", "cozy"],
+    "chords": ["C", "Em", "Am", "F", "G"],
+    "barre_chords": true,
+    "difficulty": "intermediate",
+    "reason": "A gentle romantic classic with a flowing progression and an F chord."
+  }
+]

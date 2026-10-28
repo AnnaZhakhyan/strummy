@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { searchSongs } from './services/itunesApi'
 import ChordDiagram from './services/ChordDiagram.jsx'
 import { findSongChords } from './services/songChordsApi'
+import AIRecommendations from "./AIRecommendations";
 
 
 const chordLessons = {
@@ -409,6 +410,9 @@ function App() {
                     </section>
                 )}
             </section>
+
+            <AIRecommendations />
+
             <section className="how-section section" id="how-it-works">
                 <p className="eyebrow">THERE'S NO RUSH</p>
                 <h2>Strum with us</h2>

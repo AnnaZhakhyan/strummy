@@ -1,0 +1,5 @@
+# Secrets and Python environment
+ai-backend/.env
+ai-backend/.venv/
+ai-backend/__pycache__/
+*.pyc
